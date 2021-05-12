@@ -19,7 +19,7 @@ function createListElement() {
 	button.setAttribute("class","remove");
 	button.onclick = removeParent;
 	li.setAttribute("id","a");
-	li.appendChild(document.createTextNode("\xa0"+input.value+" "));
+	li.appendChild(document.createTextNode("\xa0"+input.value+"\xa0"));
 	li.appendChild(button);
 	ol.appendChild(li);
 	input.value = "";
