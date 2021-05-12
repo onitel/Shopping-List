@@ -2,11 +2,11 @@ var button = document.getElementById("enter");
 var input = document.getElementById("userinput");
 var ol = document.querySelector("ol");
 var toDoList = document.getElementById("parent-list");
-var removeButtons = document.getElementsByClassName("remove");
 
+var removeButtons = document.getElementsByClassName("remove");
 var deleteAll = document.getElementById("deleteAll");
 var parent = document.getElementById("parent-list");
-// var btndelete = document.getElementsByClassName("remove")
+
 
 function inputLength() {
 	return input.value.length;
@@ -46,7 +46,7 @@ function addLineIfClicked(e) {
   // e.target is our targetted element.
                 // try doing console.log(e.target.nodeName), it will result LI
 				if(e.target && e.target.nodeName == "LI") {
-					console.log(e.target.id + " was clicked");
+// 					console.log(e.target.id + " was clicked");
 					e.target.classList.toggle("done");
 				}
 }
