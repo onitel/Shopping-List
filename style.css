@@ -1,9 +1,8 @@
 *, *::before, *::after {
-  box-sizing: border-box; /* easier to size the elements, padding/border ⊂ width/height */
+  box-sizing: border-box; 
   font-family: Verdana, Geneva, sans-serif;
   font-weight: normal;
 }
-
 body {
   padding:0;
   margin:0;
@@ -12,17 +11,9 @@ body {
   background: #CAE9FF;
   height: 100%;
 }
-
-/* ol {
-  position: relative;
-  left: -20px;
-  list-style-position: inside;
-} */
-
 .done {
   text-decoration: line-through;
 }
-
 /************************************************************************************/
 /* Shoping List */
 .container1 {
@@ -35,12 +26,10 @@ body {
   padding-bottom: 25px;
   border-bottom: 2px solid #6F808C;
 }
-
 h1 {
   font-size: 3.5rem;
   font-weight: 500;
 }
-
 /************************************************************************************/
 /* Enter Items & Enter */
 .container2 {
@@ -56,7 +45,6 @@ h1 {
   width: 300px;
   margin-bottom: -20px;   /* aici am pus -20px */
 }
-
 /* User Input */
 #userinput {
   width: 300px;
@@ -67,14 +55,12 @@ h1 {
   background-color: rgba(216, 29, 29, 0.0);
   padding: 5px;
 }
-
 #userinput:hover {
   background-color: rgba(161, 240, 243, 0.863);
   transition: all .2s;
   box-shadow: 0px 0px 43px -8px rgba(0,0,0,0.4);
   cursor: pointer;
 }
-
 #userinput:focus {
   background-color: rgba(161, 240, 243, 0.863);
   outline: none;
@@ -92,21 +78,17 @@ h1 {
   background-color: rgba(216, 29, 29, 0.0);
   padding: 5px;
 }
-
 #enter:hover {
   background-color: rgba(49, 179, 23, 0.89);
   transition: all .2s;
   cursor: copy;
 }
-
 #enter:active {
   box-shadow: inset 0 0 10px rgba(255, 255, 255, 1);
 }
-
 #enter:focus {
   outline: none;
 }
-
 /* Delete All List button */
 #deleteAll {
   width: 300px;
@@ -117,21 +99,17 @@ h1 {
   background-color: rgba(216, 29, 29, 0.0);
   padding: 5px;
 }
-
 #deleteAll:hover {
   background-color: rgba(216, 29, 29, 0.767);
   transition: all .2s;
   cursor: alias;
 }
-
 #deleteAll:active {
   box-shadow: inset 0 0 10px rgb(95, 2, 2);
 }
-
 #deleteAll:focus {
   outline: none;
 }
-
 /************************************************************************************/
 /* List with products */
 .container3 {
@@ -140,11 +118,9 @@ h1 {
   align-items: center;
   list-style-position: inside;
 }
-
 ol#parent-list {
   padding-inline-start: 0px;
 }
-
 /* List of products including with delete button inside */
 #a {
   margin-top: 5px;
@@ -154,7 +130,6 @@ ol#parent-list {
   overflow: auto;
   padding: 10px 0px 5px 5px;
   transition: all .1s ease-out;
-  /*text-align: justify;*/
   vertical-align: middle;
   align-items: center;
 }
@@ -166,7 +141,6 @@ ol#parent-list {
   cursor: pointer;
   transform: scale(1.01); 
 }
-
 /* Delete button */
 .remove {
   font-size: 15px;
@@ -177,21 +151,17 @@ ol#parent-list {
   padding: 1px;
   margin: 5px 5px 0px 0px;
 }
-
 .remove:hover {
   background-color:rgba(216, 29, 29, 0.767); 
   transition: all .2s;
   cursor: alias;
 }
-
 .remove:active {
   box-shadow: inset 0 0 10px rgb(95, 2, 2);
 }
-
 .remove:focus {
   outline: none;
 }
-
 li .remove {
   float: right;
 }
